@@ -1,0 +1,51 @@
+let, var e const
+
+O let cria uma variável de bloco.
+O var cria uma variável passsa a existir também fora do bloco.
+O const cria uma variável que não pode ter seu valor alterado.
+
+exemplo - 1:
+
+var ex1 = "oi";
+{
+	var ex1 = "olá";
+	console.log(ex1);
+}
+console.log(ex1);
+
+#olá
+#olá
+
+NESTE EXEMPLO O olá SOBRESCREVE O oi
+
+exemplo - 2:
+
+let ex2 = "oi";
+{
+	let ex2 = "olá";
+	console.log(ex2);
+}
+console.log(ex2);
+
+#olá
+#oi
+
+NESTE CASO O olá SÓ EXISTE DENTRO DO BLOCO
+
+exemplo - 3:
+{
+	var ex3 = "oi";
+}
+console.log(ex3);
+
+#oi;
+NESTE CASO O oi CONTINUA A EXISTIR FORA DO BLOCO
+
+exemplo - 4:
+{
+	let ex4 = "oi;
+}
+console.log(ex4);
+
+#ERRO
+NESTE CASO O ex4 NÃO EXISTE FORA DO BLOCO E RESULTA EM ERRO
