@@ -1,7 +1,7 @@
 let, var e const
 
 O let cria uma variável de bloco.
-O var cria uma variável passsa a existir também fora do bloco.
+O var cria uma variável que passsa a existir também fora do bloco.
 O const cria uma variável que não pode ter seu valor alterado.
 
 exemplo - 1:
