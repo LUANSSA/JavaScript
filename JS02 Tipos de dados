@@ -35,6 +35,7 @@ console.log(frase1);
 console.log(frase2);
 
 
+//EXERCÍCIOS
 // Declare uma variável contendo uma string
 var ex1 = "Exemplo um" 
 // Declare uma variável contendo um número dentro de uma string
