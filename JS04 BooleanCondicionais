@@ -10,6 +10,14 @@ if(undefined){}             //false
 if('' || "" || ``){}        //false
 */
 
+/*
+if(true){}                  //true
+if(1 || 2){}                //true
+if(" "){}                   //true
+if(-5 || -4){}              //true
+if("LUAN"){}                //true
+if({}){}                    //true
+*/
 
 if(""){
   console.log("\"\" True");
