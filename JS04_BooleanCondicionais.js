@@ -65,11 +65,7 @@ var idade = 28;
 var possuiDoutorado = false;
 var empregoFuturo;
 var dinheiroNaConta = 0;
-console.log(!!nome);
-console.log(!!idade);
-console.log(!!possuiDoutorado);
-console.log(!!empregoFuturo);
-console.log(!!dinheiroNaConta);
+console.log(!!nome,!!idade,!!possuiDoutorado,!!empregoFuturo,!!dinheiroNaConta);
 // Compare o total de habitantes do Brasil com China (valor em milhões)
 var brasil = 207;
 var china = 1340;
