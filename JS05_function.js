@@ -34,7 +34,7 @@ console.log(corFavorita());
 function mostrarConsole(){
   console.log("função mostrarConsole ativa");
 }
-addEventListener("mouseover",mostrarConsole);
+addEventListener("click",mostrarConsole);
 
 //SEGUNDO JEITO DE SE FAZER
 //PASSANDO UMA FUNÇÃO ANÔNIMA COMO ARGUMENTO
