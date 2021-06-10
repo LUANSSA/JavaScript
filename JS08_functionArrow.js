@@ -38,5 +38,6 @@ console.log(funcFristExemple(10));        // [ 100 ]
 console.log(funcFristExemple(10,5));      // [ 100, 25 ]
 console.log(funcFristExemple(10,5,5));    // [ 100, 25, 25 ]
 console.log(funcFristExemple(10,5,5,5));  // [ 100, 25, 25, 25 ]
- //Segundo exemplo
+
+//Segundo exemplo
  
