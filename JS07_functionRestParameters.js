@@ -19,8 +19,9 @@ console.log("somaTotal() =",somaTotal());           // imprime 0
 //É possíverl observar que a quantidade de argumentos passados na função vária.
 
 //Segundo exemplo
+//colocando o parametro a à esquerda de ...args
 function testTwo(a,...args){
-  let tam = args.length; // a variavel tam cebe a quantidade de parametros existentes em args
+  let tam = args.length; // a variavel tam cebe a quantidade de parametros existentes em ...args
   let total = 0;
   for(let i = 0; i < tam; i++){
     total += args[i]*a;
