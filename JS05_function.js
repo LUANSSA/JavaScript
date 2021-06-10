@@ -41,3 +41,21 @@ addEventListener("click",mostrarConsole);
 addEventListener("click",function(){console.log("função addEventListener ativa")});
 
 
+//fuctionFactorial
+
+//exemplo de função recursiva
+function factorialFunction(n){
+  if(n == 1 || n == 0){
+    return 1;
+  }
+  else{
+    return (n *factorialFunction(n-1));
+  }
+}
+let a, b, c, d, e;
+a = factorialFunction(0); //a recebe o valor 1
+b = factorialFunction(1); //b recebe o valor 1
+c = factorialFunction(2); //c recebe o valor 2
+d = factorialFunction(3); //d recebe o valor 6
+e = factorialFunction(4); //e recebe o valor 24
+
