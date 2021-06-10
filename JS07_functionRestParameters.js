@@ -34,7 +34,7 @@ console.log("testTwo(2,5,5,5) =",testTwo(2,5,5,5)); // a = 2; args = [5,5,5];
 
 //Terceiro exemplo
 //neste exemplo é possível perceber que pode ter mais de 1 parametro a esquerda de ...args
-function testTree(a,b,...args){
+function testThree(a,b,...args){
   let tam = args.length;
   let total = 0;
   for(let i = 0; i < tam; i++){
@@ -42,6 +42,6 @@ function testTree(a,b,...args){
   }
   return total;
 }
-console.log("           testTwo(a,b,...args)");
-console.log("testTree(1,5,5,5) =",testTree(1,5,5,5)); //a = 1; b = 5; args = [5,5];
-console.log("testTree(2,5,5,5) =",testTree(2,5,5,5)); //a = 2; b = 5; args = [5,5];
+console.log("           testThree(a,b,...args)");
+console.log("testThree(1,5,5,5) =",testTree(1,5,5,5)); //a = 1; b = 5; args = [5,5];
+console.log("testThree(2,5,5,5) =",testTree(2,5,5,5)); //a = 2; b = 5; args = [5,5];
