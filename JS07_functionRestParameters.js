@@ -45,3 +45,9 @@ function testThree(a,b,...args){
 console.log("           testThree(a,b,...args)");
 console.log("testThree(1,5,5,5) =",testTree(1,5,5,5)); //a = 1; b = 5; args = [5,5];
 console.log("testThree(2,5,5,5) =",testTree(2,5,5,5)); //a = 2; b = 5; args = [5,5];
+
+//ATENÇÃO! COLOCAR PARÂMETROS A DIREITA DE ...args RETORNARÁ ERRO POIS ...args PEGA TODOS OS VALORES
+//COM ISSO NÃO SOBRA VALORES PARA UMA NOVA VARIÁVEL A DIREITA
+//LEMBRANDO QUE A LEITURA É FEITA DA ESQUERDA PARA DIREITA
+//(a,b,...args) PRIMEIRO VAI LER a, DEPOIS b, e OS ARGUMENTOS QUE SOBRAREM VÃO PARA ...args
+
