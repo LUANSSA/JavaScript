@@ -7,7 +7,7 @@ console.log(soma(10,20));
 var subtracao = function(a,b){
   console.log("subtração de",a,"-",b,"=",a-b);
 }
-//a funcao será camada, irá imprimir o console.log() e ira retornar undefined.
+//a funcao será chamada, irá imprimir o console.log() e ira retornar undefined.
 subtracao(10,20);
 //neste caso, irá imprimir o console.log() e iŕa imprimir também o undefined que é o retorno padrão da função.
 console.log(subtracao(10,20));
