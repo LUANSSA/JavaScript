@@ -31,7 +31,10 @@ function verificaArray(array, num){
             console.log("Nome: ", e.name);
             console.log("Pilha: ", e.stack);
         }
+        else{
+            console.log("Erro não esperado: ", e);
+        }
     }
 }
 
-verificaArray();
+console.log(verificaArray());
