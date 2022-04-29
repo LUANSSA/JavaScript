@@ -46,3 +46,5 @@ console.log(verificaArray([],"a"));
 //TypeError
 console.log(verificaArray([2,3],1));
 //RangeError
+console.log(verificaArray([1,2,3,4,5], 5));
+//[1,2,3,4,5]
