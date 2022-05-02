@@ -41,50 +41,68 @@ ref: https://github.com/stebsnusch/basecamp-javascript/tree/main/orientacao-a-ob
 
 class ContaBancaria{
 
-    agencia;
-    numero;
-    tipo;
-    saldo;
 
-    constructor(type = "Conta"){
-        this.type = type;
+    constructor(agencia, numero, tipo){
+        this.agencia = agencia;
+        this.numero = numero;
+        this.tipo = tipo;
+        this._saldo = 0;
     }
-    get Saldo(){
-        return this.saldo;
+    get saldo(){
+        return this._saldo;
     }
-    set Saldo(valor){
-        this.saldo += valor;
+    set saldo(valor){
+        this._saldo = valor;
     }
 
-    set Sacar(valor){
-        if(this.saldo > valor){
-            this.saldo -= valor;
+    sacar(valor){
+        if(this._saldo > valor){
+            this._saldo -= valor;
+            return this._saldo;
         }
-        return valor;
+        return "Operação inválida";
     }
-    set Depositar(valor){
-        this.saldo += valor;
+    depositar(valor){
+        this._saldo += valor;
+        return this._saldo;
     }
 }
 
-class ContaCorrente extends ContaBancaria(){
-    constructor (){
-        super(ContaBancaria.name);
-    }
-    get Saldo(){
-        return this.saldo;
-    }
-    set Saldo(valor){
-        this.saldo += valor;
+class ContaCorrente extends ContaBancaria{
+    
+    
+    constructor (agencia, numero, cartaoCredito){
+        super(agencia, numero);
+        this.tipo = "Conta corrente";
+        this._cartaoCredito = cartaoCredito;
     }
 
-    set Sacar(valor){
-        if(this.saldo > valor){
-            this.saldo -= valor;
-        }
-        return valor;
+    get cataoCredito(){
+        return this._cartaoCredito;
     }
-    set Depositar(valor){
-        this.saldo += valor;
+    set cartaoCredito(value){
+        this._cartaoCredito = valor;
+    }
+  
+}
+
+class ContaPoupanca extends ContaBancaria{
+    constructor(agencia, numero){
+        super(agencia, numero);
+        this.tipo = "Conta poupança";
+    }
+
+}
+class ContaUniversitaria extends ContaBancaria{
+    constructor(agencia, numero){
+        super(agencia, numero);
+        this.tipo = "Conta universitária";
+    }
+    sacar(valor){
+        if(valor > 500){
+            return "Operação inválida";
+        }
+        this._saldo -= valor;
+        return this._saldo;
     }
 }
