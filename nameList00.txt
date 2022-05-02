@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 "Luan"
 "Ero"
 "Paulo"
 "Álvaro"
+=======
+"Luan"
+"Ero"
+"Paulo"
+"Álvaro"
+>>>>>>> 4e625aae086b8411738f69ec976a616c78c94dda
 "Airan"
