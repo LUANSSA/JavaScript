@@ -5,6 +5,7 @@ var time;                     //undefined
 var comida = null;            //Null
 var simbolo =  Symbol();      //Symbol
 var novoObjeto = {}           //Object
+var lista = ["A", "B"]; 
 
 console.log(typeof(nome));
 console.log(typeof(idade));
@@ -13,6 +14,7 @@ console.log(typeof(time));
 console.log(typeof(comida));
 console.log(typeof(simbolo));
 console.log(typeof(novoObjeto));
+console.log(typeof(lista));
 
 var sobrenome = "Souza";
 console.log(nome +" "+sobrenome);

@@ -1,26 +1,23 @@
 //let, var e const
 
-/*O let cria uma variável de bloco.
+/*
+O let cria uma variável de bloco.
 O var cria uma variável que passsa a existir também fora do bloco.
 O const cria uma variável que não pode ter seu valor alterado.
 */
-//--------------------------------------------------------------------
-//exemplo - 1:
 
+//exemplo - 1:
 var ex1 = "oi";
 {
 	var ex1 = "olá";
 	console.log(ex1);
 }
 console.log(ex1);
-
 //#olá
 //#olá
-
 //NESTE EXEMPLO O olá SOBRESCREVE O oi
-//--------------------------------------------------------------------
-//exemplo - 2:
 
+//exemplo - 2:
 let ex2 = "oi";
 {
 	let ex2 = "olá";
@@ -63,7 +60,7 @@ numero = 20;
 
 const pessoa = {
 	nome: "Luna",
-	sobrenome: "Souza,
+	sobrenome: "Souza",
 }
 console.log(pessoa);
 pessoa.nome = "Luan";
@@ -78,15 +75,15 @@ console.log(pessoa);
 //MAS OS VALORES DENTRO DESSE OBJETO PODEM SER ALTERADOS
 //--------------------------------------------------------------------
 //exemplo - 7:
-const pessoa = {} recebe const pessoa2 = {}  false
-const pessoa = {} recebe let pessoa2 = {}    false
-const pessoa = {} recebe var pessoa2 = {}    false
-let pessoa  =  {} recebe const pessoa2 = {}  true
-let pessoa = {}   recebe let pessoa2 = {}    true
-let pessoa = {}   recebe var pessoa2 = {}    true
-var pessoa = {}   recebe const pessoa2 = {}  true
-var pessoa = {}   recebe let pessoa2 = {}    true
-var pessoa = {}   recebe var pessoa2 = {}    true
+const pessoa = {} /*recebe*/ const pessoa2 = {}  //false
+const pessoa = {} /*recebe*/ let pessoa2 = {}    //false
+const pessoa = {} /*recebe*/ var pessoa2 = {}    //false
+let pessoa  =  {} /*recebe*/ const pessoa2 = {}  //true
+let pessoa = {}   /*recebe*/ let pessoa2 = {}    //true
+let pessoa = {}   /*recebe*/ var pessoa2 = {}    //true
+var pessoa = {}   /*recebe*/ const pessoa2 = {}  //true
+var pessoa = {}   /*recebe*/ let pessoa2 = {}    //true
+var pessoa = {}   /*recebe*/ var pessoa2 = {}    //true
 //--------------------------------------------------------------------
 //exemplo - 8
 

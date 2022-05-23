@@ -10,5 +10,8 @@ function busca(num, vetor){
 
 console.log(valores);
 console.log(busca(5, valores));
+//0
 console.log(busca(10, valores));
+//2
 console.log(busca(50, valores));
+//-1
