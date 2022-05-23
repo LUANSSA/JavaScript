@@ -23,12 +23,12 @@ var divisao = 100 / 2;            //50
 var expoente = 2 ** 4;            //16
 var resto = 14 % 5;               //4
 
-//----------------------------------------------------------------- 
+
 //Ordem das operações aritméticas
 // 1 -> () parenteses
 // 2 -> ** potenciação 
 // 3 -> *  Multiplicação ou / divisão 
-// 4 -> +  soma ou - subtraão 
+// 4 -> +  soma ou - subtração
 
 var total1 = 10 + 5 + 10;         
 var total2 = 200 / 5;             
@@ -41,15 +41,14 @@ console.log(total1);              //25
 console.log(total2);              //40
 console.log(total3);              //50
 console.log(total4);              //25
-console.log(total5);              //400
+console.log(total5);              //40
 
-//-----------------------------------------------------------------
-// Números String e operações aritméticas
 
-var somaStr = "100" + 50;         
-var subtracaoStr = "200" - 50;    
-var multiplicacaoStr = "100" * 2; 
-var divisaoStr = "100" / 2;
+//Operações aritméticas com números em Strings
+var somaStr = "100" + 50;         //concatena     
+var subtracaoStr = "200" - 50;    //subtrai 
+var multiplicacaoStr = "100" * 2; //multiplica 
+var divisaoStr = "100" / 2;       //divide
 
 console.log("Operações aritiméticas com números em String");
 console.log(somaStr);             //10050
@@ -57,9 +56,7 @@ console.log(subtracaoStr);        //150
 console.log(multiplicacaoStr);    //200
 console.log(divisaoStr);          //50
 
-//-----------------------------------------------------------------
 //Incrementos ++ e --
-
 console.log("Incrementos ++ e --");
 var x = 10;
 console.log(x++);                 //10
